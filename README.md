@@ -1,7 +1,7 @@
 # About
-Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
+Adrien Friggeri's CV template for XeLaTeX typeset using Helvetica Neue and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
 
-Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to print my publications and textpos for the aside.
+Requires TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biber for the publication list and textpos for the aside.
 
 You need to place the helveticaneue-\*.otf files into the `$HOME/.fonts` directory.
 
