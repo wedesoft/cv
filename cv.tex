@@ -1,135 +1,272 @@
-%!TEX TS-program = xelatex
-\documentclass[]{friggeri-cv}
-\addbibresource{bibliography.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
-\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\usepackage{thumbpdf}
+\usepackage{subfigure}
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\renewcommand{\theauthor}{Jan Wedekind}
+\newcommand{\thesignature}{\hphantom{\theauthor}}
+\newcommand{\thetitle}{Curriculum Vitae}
+\newcommand{\thephone}{+44 (793) 133 5290}
+\newcommand{\theemail}{\href{mailto:jan@wedesoft.de}{jan@wedesoft.de}}
+\newcommand{\thesite}{\href{http://wedesoft.de/}{http://wedesoft.de/}}
+\newcommand{\thedate}{04.06.2014}
+
+\newcommand{\renovo}[1]{{\footnotesize Renovo: ``#1''}}
+
+\newcommand{\nref}[2]{#2}
+
+\hypersetup{
+   pdftitle      = {\thetitle},
+   %pdfsubject    = {Job application as a software engineer at Google},
+   pdfsubject    = {Job application as a research engineer in computer vision},
+   pdfauthor     = {\theauthor},
+   pdfkeywords   = {curriculum vitae, software developer},
+   pdfcreator    = {XeTeX, friggeri-cv template},
+   pdfproducer   = {pdfTeX-1.40.13},
+   bookmarksopen = false,
+   colorlinks = false
+}
+
+
+% # CV
+% PRESENTATION
+% ACHIEVEMENTS
+% WORK EXPERIENCE
+% RELEVANCE TO THE ROLE
+% EDUCATION
+% PERSONALITY & SKILLS (TRANSFERABLE) (pashion, hobbies)
+
+% Analytical skills
+% Commercial awareness
+% Creativity
+% Customer focus
+% Influence & communication
+% Leadership & team work
+% planning & organisation
+% self-management
+% take control of your own learning
+
+
+% 2-3 pages
+% sales pitch <-> what the employer needs
+% how you tackle problems, make the most of opportunities
+% marketable skills, up-to-date?, know your market
+% track record of success
+% short-, medium- and long-term goals
+% unique selling points
+% how are you planning to develop yourself
+% easy to read and navigate, have an instanct impact
+% clearly shows what you achieved and provide evidence to back it up
+% make yout experience relevant to the employer
+% evidence of over-achievement
 
 \begin{document}
-\header{adrien}{friggeri}
-       {social network analyst}
 
+\header{Jan}{Wedekind}{software developer} % Your name and current job title/field
 
-% In the aside, each new line forces a line break
-\begin{aside}
-  \section{about}
-    31 rue Smith
-    69002 Lyon
-    France
-    ~
-    \href{mailto:adrien@friggeri.net}{adrien@friggeri.net}
-    \href{http://friggeri.net}{http://friggeri.net}
-    \href{http://facebook.com/adrien}{fb://adrien}
-  \section{languages}
-    bilingual french/english
-    spanish \& italian notions
-  \section{programming}
-    {\color{red} $\varheart$} JavaScript
-    (ES5, node.js)
-    Python, C, OCaml
-    CSS3 \& HTML5
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+7 William Road
+Sutton, SM1 4QT
+United Kingdom
+~
+\thephone
+~
+\theemail
+\href{http://twitter.com/wedesoft}{@wedesoft}
+\thesite
+~
+\section{languages}
+German mother tongue
+English fluent
+\section{programming}
+{\color{red} $\varheartsuit$} Ruby,
+C/C++, GNU Guile,
+Java, Clojure,
+Python, x86-64 code
 \end{aside}
 
-\section{interests}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-complex networks, social networks, community detection, community structure,
-overlapping communities, information diffusion, viral marketing, social
-inference, recommendation, data mining
+\section{personal profile}
+Forward thinking developer who enjoys problem-solving and working in interdisciplinary teams.
+Computer science PhD with specialisation in computer vision and higher-level programming languages.
+Main developer of HornetsEye which is the premier computer vision toolkit for the Ruby programming language.
+Excellent mathematics and linear algebra skills.
+Practical experience with 3D camera calibration and augmented reality.
 
-\section{education}
+%\renovo{add personal profile (special skills, relevant to the job).\\
+%e.g. experienced/professional software engineer.\\
+%Make more readable for HR.}
 
-\begin{entrylist}
-  \entry
-    {since 2009}
-    {Ph.D. {\normalfont candidate in Computer Science}}
-    {DNET/INRIA, LIP/ÉNS de Lyon}
-    {\emph{A Quantified Theory of Social Cohesion.}}
-  \entry
-    {2007–2008}
-    {M.Sc. magna cum laude}
-    {IXXI, École Normale Supérieure de Lyon}
-    {Majoring in Computer Science\\
-    Specialization in Complex Systems}
-  \entry
-    {2006–2007}
-    {B.Sc. magna cum laude}
-    {École Normale Supérieure de Lyon}
-    {Majoring in Computer Science}
-  \entry
-    {2003–2006}
-    {Classes Préparatoires aux Grandes Écoles}
-    {Lycée Fénelon, Lycée Louis le Grand, Paris}
-    {Preparation for national competitive entrance exams to leading French ``grandes écoles'', specializing in mathematics and physics.}
-  \entry
-    {2003}
-    {French Baccalauréat S. with honors}
-    {Lycée Louis le Grand, Paris}
-    {Specialization in mathematics and physics}
-\end{entrylist}
+% 10-15 seconds to get attention
 
 \section{experience}
 
 \begin{entrylist}
-  \entry
-    {02–07 2009}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Visualization of complex networks.}}
-  \entry
-    {06–08 2008}
-    {ISCPIF/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Diffusion in the Blogosphere. Happy Flu.}}
-  \entry
-    {06–08 2007}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Kernels in real world networks.}}
-  \entry
-    {07–08 2005}
-    {\href{http://www.kelkoo.com}{Kelkoo.com}}
-    {Summer job.}
-    {\emph{Creation of a keyword generator for Google Adwords.}}
-  \entry
-    {07–08 2004}
-    {\href{http://www.monsieurprix.com}{MonsieurPrix.com}}
-    {Summer job.}
-    {\emph{Development of an e-commerce product indexation spider.}}
+%------------------------------------------------
+\entry
+{2012--2014}
+{Digital Science (Macmillan)}
+{London, United Kingdom}
+{\emph{Software Developer}\\
+Commercial software development in small agile teams:% \renovo{more detail}
+\begin{itemize}
+\item Successfully implemented ``Projects'' GUI using Qt4 and Ruby
+\item Introduced automated build process for desktop software
+\item Implemented checks against geonames.org data using Clojure and SQLite
+\item Held session about fundamentals of computing at company retreat
+\end{itemize}}
+%------------------------------------------------
+\entry
+{2004--2009}
+{Sheffield Hallam University}
+{Sheffield, United Kingdom}
+{\emph{part-time Research Assistant} \\
+Software development in large interdisciplinary research groups:
+\begin{itemize}
+\item EPSRC Nanorobotics grant
+\begin{itemize}
+\item Implemented recognition and tracking algorithms
+\item Developed telemanipulation user interface for nano-indenter
+\end{itemize}
+\item European MiCRoN project
+\begin{itemize}
+\item Implemented 4-DoF object recognition for microscopy images
+\item Developed system architecture for real-time vision software
+\end{itemize}
+\end{itemize}}
+%------------------------------------------------
+\entry
+{2002-2004}
+{Carl Zeiss SMT AG}
+{Oberkochen, Germany}
+{\emph{Software Developer} \\
+2D signal processing of interferometric images, wavelets, and computer generated hologram plots.}
+%------------------------------------------------
 \end{entrylist}
 
-\section{applications}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
 
 \begin{entrylist}
-  \entry
-    {2012}
-    {Who did I forget ?}
-    {\href{http://whodidiforget.com}{whodidiforget.com}}
-    {Guest list recommendation for Facebook events based on friends already attending the event.}
-  \entry
-    {2011}
-    {Fellows}
-    {\href{http://fellows-exp.com}{fellows-exp.com}}
-    {Automatic community detection among Facebook Friends in order to validate the \emph{cohesion} measure, creation of friend lists.}
-  \entry
-    {2008}
-    {Happy Flu}
-    {\href{http://happyflu.com}{happyflu.com}}
-    {Experiment aimed to measure viral spreading of content across the blogosphere.}
+%------------------------------------------------
+\entry
+{2005--2012}
+{PhD {\normalfont (part-time) in Computer Vision}}
+{Sheffield Hallam University}
+{\emph{Efficient Implementations of Machine Vision Algorithms using a Dynamically Typed Programming Language}\\
+This thesis is about rapid-prototyping of real-time machine vision algorithms using the Ruby programming language.}
+%------------------------------------------------
+\entry
+{1996--2002}
+{MSc {\normalfont in computer science}}
+{University Fridericiana Karlsruhe}
+{Specialisation in compilers, robotics, and measurement engineering}
+%------------------------------------------------
 \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{skills}
+
+% TODO: computer science skills
+\begin{description}
+  \item[computer vision] \href{http://www.wedesoft.de/hornetseye-api/}{HornetsEye} Ruby library\footnote{mature software, main developer}, \href{http://sourceforge.net/projects/mimas}{Mimas} C++ library\footnote{mature software, core contributor}, \nref{http://opencv.org/}{OpenCV}, \href{https://github.com/wedesoft/aiscm}{AIscm} Guile library\footnote{alpha status, main developer}
+  \item[image files] \nref{http://www.imagemagick.org/}{ImageMagick}, \nref{http://www.openexr.com/}{OpenEXR}
+  \item[audio/video files] \nref{http://www.ffmpeg.org/}{FFmpeg}
+  \item[sensors/actors] \nref{http://linuxtv.org/downloads/v4l-dvb-apis/}{V4L2}, \nref{http://damien.douxchamps.net/ieee1394/libdc1394/}{libdc1394}, \nref{https://github.com/OpenKinect/libfreenect}{libfreenect}, \nref{http://www.alsa-project.org/}{ALSA}, \nref{https://github.com/wedesoft/cwiid}{WiiMote}, \nref{https://github.com/wedesoft/robobuilder}{Robobuilder}
+  \item[image processing] element-wise operations, histograms, warps, Otsu thresholding, correlation, connected components, edge detection, corner detection, feature descriptors, Hough transform, depth from focus, Fourier transform
+  \item[object recognition] normalised cross-correlation, PCA (Camspace algorithm), geometric hashing, RANSAC, planar marker recognition, camera calibration (Zhengyou Zhang)
+  \item[object tracking] Camshift, Bounded Hough transform, Lucas-Kanade tracker, SVD matching
+  \item[operating systems] \nref{http://www.debian.org/}{Debian} (LPI 101 certification), \nref{http://www.microsoft.com/windows/}{Microsoft Windows} (\nref{http://mingw.org/}{MinGW}), \nref{http://www.apple.com/}{Mac OS X} 
+  \item[programming languages] \nref{http://www.gnu.org/software/guile/}{Guile}, \nref{http://www.ruby-lang.org/}{Ruby}, \nref{http://www.python.org/}{Python}, \nref{http://gcc.gnu.org/}{C/C++}, \nref{http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html}{x86-64 machine code}
+  \item[graphical user interfaces] \nref{http://qt-project.org/}{Qt4}, \nref{http://www.opengl.org/}{OpenGL}, \nref{https://en.wikipedia.org/wiki/X\_video\_extension}{X video extension}
+  \item[databases] \nref{http://www.mysql.com/}{MySQL}, \nref{http://sqlite.org/}{SQLite}
+  \item[build tools] \nref{http://rake.rubyforge.org/}{rake}, \nref{http://www.gnu.org/software/autoconf/}{autoconf}, \nref{http://www.gnu.org/software/automake/}{automake}, \nref{http://www.gnu.org/software/make/}{make}
+  \item[software packaging] \nref{http://nsis.sourceforge.net/}{NSIS}, \nref{http://rubygems.org/}{RubyGems}
+  \item[version control systems] \nref{http://git-scm.com/}{Git}
+  \item[documentation systems] \nref{http://yardoc.org/}{Yardoc}, \nref{http://www.stack.nl/~dimitri/doxygen/}{Doxygen}, \nref{http://naturaldocs.org/}{NaturalDocs}
+  \item[testing] \nref{http://rspec.info/}{RSpec}, \nref{http://cukes.info/}{Cucumber}, \nref{http://www.gnu.org/software/automake/manual/html\_node/Introduction-to-TAP.html}{Automake TAP}, \nref{http://jenkins-ci.org/}{Jenkins}, \nref{https://travis-ci.org/}{Travis}
+  \item[publishing] \nref{http://www.latex-project.org/}{\LaTeX}, \nref{http://texpower.sourceforge.net/}{TexPower}, \nref{http://www.gnuplot.info/}{GNUPlot}, \nref{http://inkscape.org/}{InkScape}, \nref{http://povray.org/}{PovRay}, \nref{http://www.xfig.org/}{XFig}, \nref{http://www.w3.org/}{XHTML/CSS}
+\end{description}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional:} computer vision, functional programming, JIT compilers\\
+\textbf{personal:} cooking, reading, fitness, photography % TODO: group activity
+
+% Interests: Computer vision, Scheme (Guile), Clojure, fundamentals of new computing
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
 
 \section{publications}
 
+% \renovo{depending on job send publication list separately}
+\printbibsection{article}{articles in peer-reviewed journal}
 
-\printbibsection{article}{article in peer-reviewed journal}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-\end{refsection}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
-\end{refsection}
-\printbibsection{misc}{other publications}
-\printbibsection{report}{research reports}
+\printbibsection{inproceedings}{international peer-reviewed conferences/proceedings}
+
+\printbibsection{report}{technical reports}
+
+\printbibsection{misc}{talks/demonstrations}
+
+%----------------------------------------------------------------------------------------
+
+\section{demonstration videos}
+\begin{figure}[htbp]
+  \begin{center}
+    % TODO: fix links for xelatex
+    \subfigure[Barcode Scanner]{\label{fig:barcode}\href{https://www.youtube.com/watch?v=Sv31MUMM_EA}{\resizebox{.31\textwidth}{!}{\includegraphics{barcode}}}}\hspace{1em}
+    \subfigure[Camshift]{\label{fig:camshift}\href{https://www.youtube.com/watch?v=LBXgXqtt1F8}{\resizebox{.31\textwidth}{!}{\includegraphics{camshift}}}}\hspace{1em}
+    \subfigure[Lucas Kanade tracker]{\label{fig:kanade}\href{https://www.youtube.com/watch?v=8VbylCRn3iI}{\resizebox{.31\textwidth}{!}{\includegraphics{kanade}}}}\hspace{1em}
+    \subfigure[camera calibration]{\label{fig:calibration}\href{https://www.youtube.com/watch?v=rJVEvBDyVsE}{\resizebox{.31\textwidth}{!}{\includegraphics{calibration}}}}\hspace{1em}
+    \subfigure[planar marker]{\label{fig:augmented1}\href{https://www.youtube.com/watch?v=PNTTNAsvH30}{\resizebox{.31\textwidth}{!}{\includegraphics{augmented1}}}}\hspace{1em}
+    \subfigure[Augmented Reality]{\label{fig:augmented2}\href{https://www.youtube.com/watch?v=qpFGqTc8O44}{\resizebox{.31\textwidth}{!}{\includegraphics{augmented2}}}}\hspace{1em}
+    \subfigure[PCA recognition]{\label{fig:pca}\href{https://www.youtube.com/watch?v=dbY-y44fa_Q}{\resizebox{.31\textwidth}{!}{\includegraphics{pca}}}}\hspace{1em}
+    \subfigure[geometric hashing and bounded hough transform]{\label{fig:penguin}\href{https://www.youtube.com/watch?v=zzms8134CHg}{\resizebox{.31\textwidth}{!}{\includegraphics{penguin}}}}\hspace{1em}
+    \subfigure[HornetsEye demo]{\label{fig:demo}\href{https://www.youtube.com/watch?v=wNFr7RNWeCs}{\resizebox{.31\textwidth}{!}{\includegraphics{hornetseyedemo}}}}\hspace{1em}
+  \end{center}
+  \caption{Video demos (Youtube)\label{fig:examples}}
+\end{figure}
 
 \end{document}
