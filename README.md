@@ -5,6 +5,8 @@ Requires TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biber fo
 
 You need to place the helveticaneue-\*.otf files into the `$HOME/.fonts` directory.
 
+![Friggeri CV Template](cv.png)
+
 # License
 
 Copyright (C) 2012, Adrien Friggeri
