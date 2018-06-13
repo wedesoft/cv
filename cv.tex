@@ -26,7 +26,7 @@
 
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
-\renewcommand{\theauthor}{Jan Wedekind}
+\newcommand{\theauthor}{Jan Wedekind}
 \newcommand{\thesignature}{\hphantom{\theauthor}}
 \newcommand{\thetitle}{Curriculum Vitae}
 \newcommand{\thephone}{+44 (793) 133 5290}
@@ -91,28 +91,28 @@
 %	SIDEBAR SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{aside} % In the aside, each new line forces a line break
-\section{contact}
-7 William Road
-Sutton, SM1 4QT
-United Kingdom
-~
-\thephone
-~
-\theemail
-\href{http://twitter.com/wedesoft}{@wedesoft}
-\thesite
-~
-\section{languages}
-German mother tongue
+\aside{
+\subsubsection{contact}
+7 William Road\\
+Sutton, SM1 4QT\\
+United Kingdom\\
+~\\
+\thephone\\
+~\\
+\theemail\\
+\href{http://twitter.com/wedesoft}{@wedesoft}\\
+\thesite\\
+~\\
+\subsubsection{languages}
+German mother tongue\\
 English fluent
-\section{programming}
+\subsubsection{programming}
 % {\color{red} $\varheartsuit$}
-Ruby,
-C/C++, GNU Guile,
-Java, Clojure,
+Ruby,\\
+C/C++, GNU Guile,\\
+Java, Clojure,\\
 Python, x86-64 code
-\end{aside}
+}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -136,11 +136,22 @@ Practical experience with 3D camera calibration and augmented reality.
 \begin{entrylist}
 %------------------------------------------------
 \entry
+{2014--}
+{Roke}
+{Romsey, United Kingdom}
+{Consultant Engineer}
+{Signal processing and software engineering:
+\begin{itemize}
+  \item Developed software for maritime data analysis
+  \item signal processing for commercial sensitive project
+\end{itemize}}
+%------------------------------------------------
+\entry
 {2012--2014}
 {Digital Science (Macmillan)}
 {London, United Kingdom}
-{\emph{Software Developer}\\
-Commercial software development in small agile teams:% \renovo{more detail}
+{Software Developer}
+{Commercial software development in small agile teams:% \renovo{more detail}
 \begin{itemize}
 \item Successfully implemented ``Projects'' GUI using Qt4 and Ruby
 \item Introduced automated build process for desktop software
@@ -152,8 +163,8 @@ Commercial software development in small agile teams:% \renovo{more detail}
 {2004--2009}
 {Sheffield Hallam University}
 {Sheffield, United Kingdom}
-{\emph{part-time Research Assistant} \\
-Software development in large interdisciplinary research groups:
+{part-time Research Assistant}
+{Software development in large interdisciplinary research groups:
 \begin{itemize}
 \item EPSRC Nanorobotics grant
 \begin{itemize}
@@ -171,8 +182,8 @@ Software development in large interdisciplinary research groups:
 {2002-2004}
 {Carl Zeiss SMT AG}
 {Oberkochen, Germany}
-{\emph{Software Developer} \\
-2D signal processing of interferometric images, wavelets, and computer generated hologram plots.}
+{Software Developer}
+{2D signal processing of interferometric images, wavelets, and computer generated hologram plots.}
 %------------------------------------------------
 \end{entrylist}
 
@@ -188,14 +199,15 @@ Software development in large interdisciplinary research groups:
 {2005--2012}
 {PhD {\normalfont (part-time) in Computer Vision}}
 {Sheffield Hallam University}
-{\emph{Efficient Implementations of Machine Vision Algorithms using a Dynamically Typed Programming Language}\\
-This thesis is about rapid-prototyping of real-time machine vision algorithms using the Ruby programming language.}
+{Efficient Implementations of Machine Vision Algorithms using a Dynamically Typed Programming Language}
+{This thesis is about rapid-prototyping of real-time machine vision algorithms using the Ruby programming language.}
 %------------------------------------------------
 \entry
 {1996--2002}
 {MSc {\normalfont in computer science}}
 {University Fridericiana Karlsruhe}
 {Specialisation in compilers, robotics, and measurement engineering}
+  {}
 %------------------------------------------------
 \end{entrylist}
 
